@@ -1,3 +1,3 @@
 # stemlink
 
-preview the project in www.stemlinkonline.lk
+preview the project in www.stemlink.online
