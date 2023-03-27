@@ -1,0 +1,420 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs | STEMlink</title>
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/images/favicon_new.png" />
+    <!-- Remix icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- Swiper.js styles -->
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="../assets/css/post.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/main.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body class="light-theme">
+    <!-- Header -->
+    <!-- Header -->
+    <header class="header" id="header">
+      <nav class="navbar container">
+       <a href="index.html" class="nav-logo"
+          ><img src="./../../img/logo-stem.png" alt=""
+        /></a>
+
+        <div class="list list-right">
+          <button class="btn place-items-center" id="theme-toggle-btn">
+            <i class="ri-sun-line sun-icon"></i>
+            <i class="ri-moon-line moon-icon"></i>
+          </button>
+
+          <button class="btn place-items-center" id="search-icon">
+            <i class="ri-search-line"></i>
+          </button>
+
+          <button
+            class="btn place-items-center screen-lg-hidden menu-toggle-icon"
+            id="menu-toggle-icon"
+          >
+            <i class="ri-menu-3-line open-menu-icon"></i>
+            <i class="ri-close-line close-menu-icon"></i>
+          </button>
+        </div>
+
+        <div class="menu" id="menu">
+          <ul class="list">
+            <li class="list-item">
+              <a href="../index.html" class="list-link current">Home</a>
+            </li>
+            <div id="explore-mob-btn" class="dropdown">
+              <button class="dropbtn" onclick="myFunction()">
+                Explore
+                <i class="fa fa-caret-down dropdown-icon"></i>
+              </button>
+              <div class="dropdown-content" id="myDropdown">
+                <a href="../../index.html#section--2">Our Classes</a>
+                <a href="../../index.html#section--3">Testimonials</a>
+              </div>
+            </div>
+            <li class="list-item">
+              <a href="../../about.html" class="list-link">About Us</a>
+            </li>
+            <div id="learning-mob-btn" class="dropdown2">
+              <button
+                class="dropbtn2"
+                style="cursor: pointer"
+                onclick="myFunction2()"
+              >
+                Learning
+                <i class="fa fa-caret-down dropdown-icon"></i>
+              </button>
+              <div class="dropdown-content" id="myDropdown2">
+                <a href="../../about.html">">STEM link</a>
+                <a href="../../about.html#maths">Maths</a>
+                <a href="../../about.html#science">Science</a>
+                <a href="../../about.html#it">ICT</a>
+                <a href="../../about.html#english">English</a>
+                <hr />
+                <a href="../../about.html#almaths">C. Maths</a>
+                <a href="../../about.html#alphys">Physics</a>
+                <a href="../../about.html#alchem">Chemistry</a>
+                <a href="../../about.html#CS">Computer Science</a>
+                <hr />
+                <a href="../../about.html#robotics">Robotics</a>
+                <a href="../../about.html#photoshop">Photoshop</a>
+                <a href="../../about.html#python">Python</a>
+              </div>
+            </div>
+            <li class="list-item">
+              <a href="../index.html" class="list-link">Blogs</a>
+            </li>
+            <li class="list_item">
+              <a class="list-link list-link--btn" href="../../contact.html"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Search -->
+    <div class="search-form-container container" id="search-form-container">
+      <div class="form-container-inner">
+        <form action="" class="form">
+          <input
+            class="form-input"
+            type="text"
+            placeholder="What are you looking for?"
+          />
+          <button class="btn form-btn" type="submit">
+            <i class="ri-search-line"></i>
+          </button>
+        </form>
+        <span class="form-note">Or press ESC to close.</span>
+      </div>
+
+      <button class="btn form-close-btn place-items-center" id="form-close-btn">
+        <i class="ri-close-line"></i>
+      </button>
+    </div>
+
+    <section class="blog-post section-header-offset">
+      <div class="blog-post-container container">
+        <div class="blog-post-data">
+          <h3 class="title blog-post-title">
+            Digital Transformation Stratergy
+          </h3>
+          <div class="article-data">
+            <span>6 Jan 2022</span>
+            <span class="article-data-spacer"></span>
+            <span>5 Min read</span>
+          </div>
+          <img src="https://www.softwareone.com/-/media/global/solutions/application-services/digital-transformation/digital-transformation-hero.jpg?rev=3457479f832f48868b0799ec267aa9a6&sc_lang=si-lk&hash=6497038A69067A35506458341EE207D2" alt="digital marketing analysis" />
+        </div>
+
+        <div class="container">
+          <p>
+            'Digital Transformation' keyword itself carries a brief idea of what
+            does this means. But the real question stands do seem that simple as
+            it sounds. Digital Transformation has become a key topic in every
+            board room, from small scale to multi-national companies, and the
+            Covid-19 pandemic has even more encouraged the corporations towards
+            Digital Transformation. <br /><br />
+            <b>What is Digital Transformation?</b> <br><br>
+            Digital Transformation could have a wide range of definitions due to
+            the complexity and broader spread in the industry. The most
+            reasonable explanation would be that integrating digital technology
+            in all business areas to make the process efficient for the
+            organizations and customers keeps challenging the status quo in the
+            company. But generally, companies tend to misunderstand this
+            definition and start believing that having a website, mobile app or
+            an e-commerce store would satisfy the requirements of a digitally
+            transformed business model, which is not the case. The scope of
+            Digital Transformation could be broadened in multiple ways.
+            <br />
+            <br />
+            Digital Transformation will result from a series of decisions
+            affecting your value proposition, your culture, how you use data,
+            analytics, technology and how you engage with your staff and
+            customers. According to Dave Chaffey's 'Digital Marketing: Strategy,
+            Planning and Implementation' book, there are 5D's companies that
+            could work on reaching and learning from the audiences by giving
+            them a better customer experience.
+            <br />
+            <ol style="margin-left: 50px;">
+                <li>Digital Devices – Encouraging the users to interact with the
+            company mobile app or website through multiple devices would heavily
+            increase the efficiency from the customer's end. They would also
+            provide an excellent opportunity for businesses to gain valuable
+            data by tracking user interactions. </li>
+            <li> Digital Platforms – Other than the mobile apps and company
+            website, the companies could reach a bigger audience through
+            promoting the business ideas and products through highly used social
+            media such as Facebook, Instagram, Twitter, etc. Currently, all
+            these social media have given their own or integrated data analytic
+            platforms for businesses to gain well-organized insights.</li>
+            <li> 
+            Digital Media – Using different paid, owned and earned
+            communication channels to promote the businesses and engaging the
+            audience. This could include social media marketing, starting up
+            YouTube channels or blogs to establish a brand, working on SEO to
+            appear on search results and much more </li>
+            <li> Digital Data- This could be considered as the golden opportunity
+            companies get by digitalizing their business. Suppose the whole
+            business was running on a conventional platform and all the
+            advertising is done on public media like television, radio or
+            banners. In that case, we could never gain more extensive insight
+            into the people who viewed these. But digital media has introduced
+            tons of analytics platforms for businesses to acquire enough data to
+            take driven decisions.  </li>
+            <li> Digital Technology – Marketing strategies companies used to
+            interact with the audiences, such as mobile app or company websites,
+            email campaigns, newsletters that would be used to keep the audience
+            in touch, would fall under this category. </li>
+
+            </ol>
+            
+           
+           
+           
+            <br />
+         
+            Above 5D's mainly focused on how to digitalize the company marketing
+            strategies from the customer's end. Professor Niall McKeown explains
+            seven Digital Transformation Strategies companies could work on to
+            make a considerable turnover in the business. He mainly breaks them
+            down into 3 categories as Microanalysis, Macroanalysis and action.
+          </p>
+          <img src="personalBrandingIn.jpg" alt="digital transformation framework marketplace analysis">
+          <h3>Micro Analysis</h3>
+          <p>Micro Analysis could be described as the collection of factors close to the organization, directly impacting the business's daily performance. </p>
+          <h4>Diagnosis</h4>
+          <p>One of the most important components of Microanalysis is 'Knowing Yourself '. Companies need to do a qualitative analysis and understand what trends are going around in the current market and what areas we are doing well and lacking. Having a strategic ambition on driving the company towards a specific direction would narrow down the priorities and complexity of work. It's a well-known fact that the ambition of all businesses is to earn money, and this cannot be considered a strategic ambition. The companies need to step beyond that and develop innovative and creative ideas to grow beyond the core business. Going through this process would be beneficial for the companies to build a unique value around the products and services they are providing to the customers.</p>
+          <h4>Customers</h4>
+          <p>Microanalysis would also include understanding the customer base. From the 5D's mentioned above, we could gain very useful insights using tools such as Google Analytics, Google Trends,  Google Keyword planner and much more. These tools enable us to understand the communities that have never become our customers but who would be interested in our business if we could come up with better solutions.</p>
+          <h4>Market Place</h4>
+          <p>According to Professor Niall, fighting in the digital economy is the same as playing a boxing battle. There are different weight classes, and it's important to fight the battles that are possible to win. Using tools such as Propulsion, we could gain insights on the position where the company stands in the digital economy and would give us a better idea of how the company could move forward with the digital economy. </p>
+          <h3>Macro Analysis</h3>
+          <p>Macro Analysis enables the companies to analyze and identify the potential opportunities and hazards that would impact the business. It's really important to understand where the company stands and to what position it can be driven. </p>
+          <h4>Where are we & What can we be </h4>
+          <img src="digitalTransformation.png" alt="micro analysis macro analysis diagnosis chart digital transformation">
+          <p>
+            The quadrant represents how the company could be taken to the mainstream level through different strategies. Advocacy means the customer base and businesses the company gain through the years of operation. It's more of a handshake deal where brand loyalty develops with time. But this would not take you to the hierarchical level in an expected life span. So, companies shift to paid social media marketing. Through these methods, companies gain immense attention for a short period, but that would not help them get acquisitions that would bring in expected profits. The main reason for this is that the organic customers who visit the company site would be interested in knowing who we are and the acquisitions that came through paid promotions would be interested in what they could buy from us. In most cases, the customers we gain through paid advertisements don't stay loyal to the brand longer. 
+          </p>
+          <img src="digitaltransformationIN.jpg" alt="digital economy grownth digital profile reach cutomer reach">
+
+          <p>Better method companies could reach Authority from Advocacy is by keeping on innovating promptly by the analytics gained through Microanalysis. So, the company would attract different customer bases with its variety of innovations and technological advancements. To reach this level, the company needs a talented leadership and a creative team than both the previous instances. Most of the corporations got to the mainstream through constant innovation along with technology. </p>
+          <h3>Conclusion</h3>
+          <p>
+            Digital transformation is not just transforming the whole workplace or customer base to digital platforms. But most importantly, using digital technologies to collect data in order to make Strategic and Data-Driven decisions. According to a recent survey, 84% of global companies consider digital transformation as the key to survival in the next 5 years. 
+          </p>
+         
+          <blockquote class="quote">
+            <p>
+              <span><i class="ri-double-quotes-l"></i></span>
+              STEM link has launched a series of tech courses such as Python
+              Programming, Frontend Development, Robotics and Photoshop courses
+              for you to enhance your skill library.
+              <span><i class="ri-double-quotes-r"></i></span>
+            </p>
+          </blockquote>
+          <!-- 
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
+            eius possimus hic eligendi distinctio rerum incidunt, esse quasi eum
+            molestiae ducimus ipsam quae, aliquid ullam placeat dolorum nulla
+            vero. Quam? Lorem ipsum dolor sit amet consectetur, adipisicing
+            elit. Vero quod necessitatibus, aspernatur pariatur asperiores earum
+            quas adipisci veritatis quidem facilis! Nihil veniam quaerat nulla
+            possimus, asperiores vero voluptatum placeat. Eveniet!
+          </p> -->
+
+          <div class="author d-grid">
+            <div class="author-image-box">
+              <img src="dilshara.png" alt="" class="article-image" />
+            </div>
+            <div class="author-about">
+              <h3 class="author-name">Dilshara Hasanka</h3>
+              <p>
+                Founder of STEM link, Mathematics consultant for UK, Computer
+                Science tutor for STEM link, Content Specialist for B Your
+                Brand, Freelance Journalist & Software Engineering Undergraduate
+              </p>
+              <ul class="list social-media">
+                <li class="list-item">
+                  <a href="#" class="list-link"
+                    ><i class="ri-instagram-line"></i
+                  ></a>
+                </li>
+                <li class="list-item">
+                  <a href="#" class="list-link"
+                    ><i class="ri-facebook-circle-line"></i
+                  ></a>
+                </li>
+                <li class="list-item">
+                  <a href="#" class="list-link"
+                    ><i class="ri-twitter-line"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- <footer class="footer section">
+      <div class="footer-container container d-grid">
+        <div class="company-data">
+          <a href="./index.html">
+            <h2 class="logo">NewsFlash</h2>
+          </a>
+          <p class="company-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
+            iure. Harum, animi dolores, nam, ad magni expedita.
+          </p>
+          <ul class="list social-media">
+            <li class="list-item">
+              <a href="#" class="list-link"
+                ><i class="ri-instagram-line"></i
+              ></a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link"
+                ><i class="ri-facebook-circle-line"></i
+              ></a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link"><i class="ri-twitter-line"></i></a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link"
+                ><i class="ri-pinterest-line"></i
+              ></a>
+            </li>
+          </ul>
+          <span class="copyright-notice"
+            >&copy;2021 NewsFlash. All rights reserved.</span
+          >
+        </div>
+
+        <div>
+          <h6 class="title footer-title">Categories</h6>
+          <ul class="footer-list list">
+            <li class="list-item">
+              <a href="#" class="list-link">Travel</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Food</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Technology</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Health</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Nature</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Fitness</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h6 class="title footer-title">Useful links</h6>
+          <ul class="footer-list list">
+            <li class="list-item">
+              <a href="#" class="list-link">Home</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Elements</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Tags</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Authors</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Membership</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h6 class="title footer-title">Company</h6>
+          <ul class="footer-list list">
+            <li class="list-item">
+              <a href="#" class="list-link">Contact us</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">F.A.Q</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Careers</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Authors</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Memberships</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer> -->
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="../../index.html#section--2">Explore</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="../../index.html#section--3">Testimonials</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">FAQ</a>
+        </li>
+      </ul>
+      <h2 class="nav__logo text-center"><span class="stem">STEM</span> link</h2>
+      <p class="text-center copyright">&copy; Copyright 2021 STEM link
+      </p>
+    </footer>
+
+    <!-- Swiper.js -->
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+    <!-- Custom script -->
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

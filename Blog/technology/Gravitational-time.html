@@ -1,0 +1,436 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs | STEMlink</title>
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/images/favicon_new.png" />
+    <!-- Remix icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- Swiper.js styles -->
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="../assets/css/post.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/main.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body class="light-theme">
+    <!-- Header -->
+    <!-- Header -->
+    <header class="header" id="header">
+      <nav class="navbar container">
+       <a href="index.html" class="nav-logo"
+          ><img src="./../../img/logo-stem.png" alt=""
+        /></a>
+
+        <div class="list list-right">
+          <button class="btn place-items-center" id="theme-toggle-btn">
+            <i class="ri-sun-line sun-icon"></i>
+            <i class="ri-moon-line moon-icon"></i>
+          </button>
+
+          <button class="btn place-items-center" id="search-icon">
+            <i class="ri-search-line"></i>
+          </button>
+
+          <button
+            class="btn place-items-center screen-lg-hidden menu-toggle-icon"
+            id="menu-toggle-icon"
+          >
+            <i class="ri-menu-3-line open-menu-icon"></i>
+            <i class="ri-close-line close-menu-icon"></i>
+          </button>
+        </div>
+
+        <div class="menu" id="menu">
+          <ul class="list">
+            <li class="list-item">
+              <a href="../index.html" class="list-link current">Home</a>
+            </li>
+            <div id="explore-mob-btn" class="dropdown">
+              <button class="dropbtn" onclick="myFunction()">
+                Explore
+                <i class="fa fa-caret-down dropdown-icon"></i>
+              </button>
+              <div class="dropdown-content" id="myDropdown">
+                <a href="../../index.html#section--2">Our Classes</a>
+                <a href="../../index.html#section--3">Testimonials</a>
+              </div>
+            </div>
+            <li class="list-item">
+              <a href="../../about.html" class="list-link">About Us</a>
+            </li>
+            <div id="learning-mob-btn" class="dropdown2">
+              <button
+                class="dropbtn2"
+                style="cursor: pointer"
+                onclick="myFunction2()"
+              >
+                Learning
+                <i class="fa fa-caret-down dropdown-icon"></i>
+              </button>
+              <div class="dropdown-content" id="myDropdown2">
+                <a href="../../about.html">STEM link</a>
+                <a href="../../about.html#maths">Maths</a>
+                <a href="../../about.html#science">Science</a>
+                <a href="../../about.html#it">ICT</a>
+                <a href="../../about.html#english">English</a>
+                <hr />
+                <a href="../../about.html#almaths">C. Maths</a>
+                <a href="../../about.html#alphys">Physics</a>
+                <a href="../../about.html#alchem">Chemistry</a>
+                <a href="../../about.html#CS">Computer Science</a>
+                <hr />
+                <a href="../../about.html#robotics">Robotics</a>
+                <a href="../../about.html#photoshop">Photoshop</a>
+                <a href="../../about.html#python">Python</a>
+              </div>
+            </div>
+            <li class="list-item">
+              <a href="../index.html" class="list-link">Blogs</a>
+            </li>
+            <li class="list_item">
+              <a class="list-link list-link--btn" href="../../contact.html"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Search -->
+    <div class="search-form-container container" id="search-form-container">
+      <div class="form-container-inner">
+        <form action="" class="form">
+          <input
+            class="form-input"
+            type="text"
+            placeholder="What are you looking for?"
+          />
+          <button class="btn form-btn" type="submit">
+            <i class="ri-search-line"></i>
+          </button>
+        </form>
+        <span class="form-note">Or press ESC to close.</span>
+      </div>
+
+      <button class="btn form-close-btn place-items-center" id="form-close-btn">
+        <i class="ri-close-line"></i>
+      </button>
+    </div>
+
+    <section class="blog-post section-header-offset">
+      <div class="blog-post-container container">
+        <div class="blog-post-data">
+          <h3 class="title blog-post-title">
+            Gravitational Time Dilation and physics behind the Interstellar
+            movie
+          </h3>
+          <div class="article-data">
+            <span>20 Jan 2022</span>
+            <span class="article-data-spacer"></span>
+            <span>8 Min read</span>
+          </div>
+          <img src="Interstellar2.jpg" alt="interstellar nolan time dilation space time time travel" />
+        </div>
+
+        <div class="container">
+          <p>
+            'Interstellar' has become one of the favorite movies of any Sci-Fi
+            enthusiast. It's an astonishing creation done by the well-known film
+            director Christopher Nolan who has also been the producer of
+            mind-blowing movies like Tenet and Inception. Interstellar movie was
+            framed around a space exploration mission beyond the galaxy
+            searching for a planet suitable for a human territory. The movie
+            includes tons of physical concepts such as gravitational time
+            dilation, quantum entanglement, the singularity of a black hole,
+            neutron stars, multi-dimensional realities, Bootstrap paradox and
+            much more. Therefore when understanding the concept of time
+            dilation, Interstellar would set a great visual foundation to
+            understand it practically. Time dilation could be simply said as the
+            slow down in the flow of time due to the effects of gravitational
+            force or relative velocity. Before we dig in deep, time dilation was
+            first discovered by sir Albert Einstein, and there are interesting
+            stories that explain how he first got the idea to research this
+          </p>
+          <h3>Gravitational Time dilation</h3>
+
+          <img
+            src="https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/222/2016/02/20113213/Figure_29_02_03a.jpg"
+            alt="relativity special relativity time dilation time travel light"
+          />
+
+          <p>
+            As you know, gravity is the force by which a planet or a particular
+            body draws other objects towards its center and that's why all the
+            planets are in orbit around the sun. The time dilation due to
+            gravity could be explained using the space-time cloth. The time
+            curvature is happening in the 4th dimension and since we cannot
+            sense the behavior in the 4th dimension, we assume our space as
+            two-dimensional and the depth as the 3rd dimension for explanation
+            purposes. Space-time cloth is a hypothetical stretchable cloth. When
+            you place an object with a lesser density, you could see a low
+            curvature in the cloth, and if you place an object with a higher
+            density, you could see a very high curvature in space-time cloth or
+            in other words, a high curvature in time. The higher the curvature
+            in time, the lesser the flow of time, and the lesser the curvature
+            would cause the time to flow relatively fast. The gravitational pull
+            of a planet or body acting on other objects towards it's centre
+            depends on the radius and the mass of that planet or body. Higher
+            the mass and lesser the radius of a particular body, the
+            gravitational pull towards the center of that body would be high.
+            When the gravitational force is high, the curvature of time would be
+            increased, and the time flow would slow down.
+            <br />
+            <br />
+            According to the given equation, Universal Gravitational Constant
+            and the speed of light stays as contents. So, when the mass and the
+            radius of the planet increase and decrease, respectively, the time
+            dilations would be high, or else time flow would slow down. The
+            singularity in the black hole has an infinitely large mass and an
+            infinitely small volume which would cause to have a compelling
+            gravitational force towards its center for an extent where the flow
+            of time would stop at the event horizon of the black hole.
+          </p>
+          <h3>Time Dilation in Interstellar</h3>
+          <img
+            src="https://static-ssl.businessinsider.com/image/54626f1969bedd350777990f-1200-858/interstellar-graphic.png"
+            alt="time dilation interstellar timeline nolan"
+          />
+          <p>
+            Christopher Nolan has successfully visualized this concept in two
+            significant situations in the movie. When Cooper and his crew landed
+            in the spaceship on the Millers' planet, they clearly state that
+            Miller's planet has a 130% higher gravitational force than the
+            earth, and 1 hour here would be seven years on earth. The reason for
+            high gravitational force is that Miller's planet was closer to
+            Gagentua Blackhole. As mentioned above, closer to black holes,
+            there's a significant slow down in time due to very high
+            gravitational force in a singularity. Before they landed the
+            spaceship on Miller's planet, Cooper's daughter's age was around 14
+            years and Cooper's age was 35. But after spending just three hours
+            on Miller's planet, when cooper took a call to his daughter, she
+            said that this was her 35th birthday. This means for the 3 hours
+            Cooper has spent on Miller's planet; his daughter has aged more than
+            21 years. This scenario vividly explains the extent time would slow
+            down in greater gravity surfaces relative to earth.
+            <br /><br />
+            In the second level of comparison, we could consider the situation
+            where Romiley ages 23 years than the rest of the crew. Cooper
+            realized that instead of orbiting around Miller's planet, he decided
+            to take a wider orbit like endurance to conserve fuel and time. But
+            they forgot to consider the time shift in the endurance and Miller's
+            planet. At this point, Romiley decided to stay on board endurance to
+            study the black hole and the rest of the crew landed on Miller's
+            planet using a Ranger. The surprising fact was that, when the crew
+            returns to the spaceship after spending close to 3 hours on Miller's
+            planet, Romeily has spent 23 years on the spaceship waiting for the
+            crew to return.
+
+            <br />
+            <br />
+            Here comes the mind-thriller part in the movie. First you get see
+            Cooper falling in to the black hole and in the ending, you see him
+            surviving. An object that falls inside a black hole would be
+            horizontally crushed and vertically stretched by an infinitely large
+            force, making the survival of cooper questionable. Different
+            arguments stating that before he falls in, 5th-dimensional humans
+            rescued him and sent him towards a Tesseract. Another group of
+            people argues that he fell into the black hole, discovered the
+            singularity characteristics, and sent those data backwards the time
+            so that Murph could solve the equation of manipulating the gravity.
+            <br /><br />
+            However, the most exciting part is that, even though cooper spent
+            just several hours inside the black hole, after waking up in the
+            Cooper station, he found his daughter has grown much older and is
+            more than a hundred years old. Also, Cooper found himself 124 years
+            old relative earth even though he has spent just a few months or
+            weeks for the whole space journey relative to him after leaving the
+            earth.
+          </p>
+
+          <blockquote class="quote">
+            <p>
+              <span><i class="ri-double-quotes-l"></i></span>
+              In our classes we incorporate real-world examples to make the
+              session more interesting and practical. Learning with examples
+              would help students to make sense out of what they have learnt.
+              This is the reason in our classes we get lots of interesting
+              creative ideas from students' end as well.
+              <span><i class="ri-double-quotes-r"></i></span>
+            </p>
+          </blockquote>
+          <h3>In conclusion</h3>
+          <p>
+            Gravitational time dilation is a broad topic involving multiple
+            physical theories, and the more you research this, the more you feel
+            inclined to explore further.
+          </p>
+          <div class="author d-grid">
+            <div class="author-image-box">
+              <img src="dilshara.png" alt="" class="article-image" />
+            </div>
+            <div class="author-about">
+              <h3 class="author-name">Dilshara Hasanka</h3>
+              <p>
+                Founder of STEM link, Mathematics consultant for UK, Computer
+                Science tutor for STEM link, Content Specialist for B Your
+                Brand, Freelance Journalist & Software Engineering Undergraduate
+              </p>
+              <ul class="list social-media">
+                <li class="list-item">
+                  <a href="#" class="list-link"
+                    ><i class="ri-instagram-line"></i
+                  ></a>
+                </li>
+                <li class="list-item">
+                  <a href="#" class="list-link"
+                    ><i class="ri-facebook-circle-line"></i
+                  ></a>
+                </li>
+                <li class="list-item">
+                  <a href="#" class="list-link"
+                    ><i class="ri-twitter-line"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- <footer class="footer section">
+      <div class="footer-container container d-grid">
+        <div class="company-data">
+          <a href="./index.html">
+            <h2 class="logo">NewsFlash</h2>
+          </a>
+          <p class="company-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
+            iure. Harum, animi dolores, nam, ad magni expedita.
+          </p>
+          <ul class="list social-media">
+            <li class="list-item">
+              <a href="#" class="list-link"
+                ><i class="ri-instagram-line"></i
+              ></a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link"
+                ><i class="ri-facebook-circle-line"></i
+              ></a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link"><i class="ri-twitter-line"></i></a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link"
+                ><i class="ri-pinterest-line"></i
+              ></a>
+            </li>
+          </ul>
+          <span class="copyright-notice"
+            >&copy;2021 NewsFlash. All rights reserved.</span
+          >
+        </div>
+
+        <div>
+          <h6 class="title footer-title">Categories</h6>
+          <ul class="footer-list list">
+            <li class="list-item">
+              <a href="#" class="list-link">Travel</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Food</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Technology</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Health</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Nature</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Fitness</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h6 class="title footer-title">Useful links</h6>
+          <ul class="footer-list list">
+            <li class="list-item">
+              <a href="#" class="list-link">Home</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Elements</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Tags</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Authors</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Membership</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h6 class="title footer-title">Company</h6>
+          <ul class="footer-list list">
+            <li class="list-item">
+              <a href="#" class="list-link">Contact us</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">F.A.Q</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Careers</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Authors</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Memberships</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer> -->
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="../../index.html#section--2">Explore</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="../../index.html#section--3">Testimonials</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">FAQ</a>
+        </li>
+      </ul>
+      <h2 class="nav__logo text-center"><span class="stem">STEM</span> link</h2>
+      <p class="text-center copyright">&copy; Copyright 2021 STEM link
+      </p>
+    </footer>
+
+    <!-- Swiper.js -->
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+    <!-- Custom script -->
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

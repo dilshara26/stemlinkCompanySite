@@ -1,0 +1,770 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs | STEMlink</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="./../img/favicon.ico" />
+    <!-- Remix icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Swiper.js styles -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css"/>
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/2cea1712e979434b3492355fe/0e414005a51bf3a9b43cf0eeb.js"); </script>
+  
+</head>
+<body class="light-theme">
+    <!-- Header -->
+    <header style="background-color: white;" class="header" id="header">
+
+        <nav class="navbar container" style="background-color: white; padding-top: 1% !important">
+            <a href="index.html" class="nav-logo"
+          ><img src="./../img/logo-stem.png" alt=""
+        /></a>
+            
+            <div class="list list-right">
+                <button class="btn place-items-center" id="theme-toggle-btn">
+                    <i class="ri-sun-line sun-icon"></i>
+                    <i class="ri-moon-line moon-icon"></i>
+                </button>
+
+                <button class="btn place-items-center" id="search-icon" style="display:none">
+                    <i class="ri-search-line"></i>
+                </button>
+
+                <button class="btn place-items-center screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
+                    <i class="ri-menu-3-line open-menu-icon"></i>
+                    <i class="ri-close-line close-menu-icon"></i>
+                </button>
+
+            </div>
+
+            <div class="menu" id="menu">
+                <ul class="list">
+                    <li class="list-item">
+                        <a href="../index.html" class="list-link current">Home</a>
+                    </li>
+                    <div id="explore-mob-btn" class="dropdown">
+                        <button class="dropbtn" onclick="myFunction()">Explore
+                          <i class="fa fa-caret-down dropdown-icon"></i>
+                        </button>
+                        <div class="dropdown-content" id="myDropdown">
+                          <a href="../index.html#section--2">Our Classes</a>
+                          <a href="../index.html#section--2">Testimonials</a>
+                        </div>
+                    </div>
+                    <li class="list-item">
+                        <a href="../about.html" class="list-link">About Us</a>
+                    </li>
+                    <!-- <div id="learning-mob-btn" class="dropdown2">
+                        <button class="dropbtn2" style="cursor: pointer;" onclick="myFunction2()">Learning
+                          <i class="fa fa-caret-down dropdown-icon"></i>
+                        </button>
+                        <div class="dropdown-content" id="myDropdown2">
+                          <a href="../about.html">STEM link</a>
+                          <a href="../about.html#maths">Maths</a>
+                          <a href="../about.html#science">Science</a>
+                          <a href="../about.html#it">ICT</a>
+                          <a href="../about.html#english">English</a>
+                          <hr>
+                          <a href="../about.html#almaths">C. Maths</a>
+                          <a href="../about.html#alphys">Physics</a>
+                          <a href="../about.html#alchem">Chemistry</a>
+                          <a href="../about.html#CS">Computer Science</a>
+                          <hr>
+                          <a href="../about.html#robotics">Robotics</a>
+                          <a href="../about.html#photoshop">Photoshop</a>
+                          <a href="../about.html#python">Pyhton</a>
+                        </div>
+                    </div> -->
+                    <li class="nav__item">
+                        <a class="nav__link" href="https://stem.searchbar.lk/courses/stem-link">Platform</a>
+                      </li>
+                    <li class="list-item">
+                        <a href="./index.html" class="list-link">Blogs</a>
+                    </li>
+                    <li class="list_item">  
+                        <a class="list-link list-link--btn" href="../contact.html">Contact Us</a>
+                      </li>
+                    
+                </ul>
+            </div>
+
+            
+
+        </nav>
+
+    </header>
+
+    <!-- Search -->
+    <div class="search-form-container" id="search-form-container">
+
+        <div class="search-input">
+            <a href="" target="_blank" hidden></a>
+            <input type="text" class="form" placeholder="Type to search.." />
+            <div class="autocom-box">
+              <!-- here list are inserted from javascript -->
+            </div>
+            <div class="icon"><i class="fas fa-search"></i></div>
+            <!-- <span class="form-note">Or press ESC to close.</span> -->
+        </div>
+            
+        <button class="btn form-close-btn place-items-center" id="form-close-btn">
+            <i class="ri-close-line"></i>
+        </button>
+
+    </div>
+
+    <!-- Featured articles -->
+    <section class="featured-articles section section-header-offset">
+
+        <div class="featured-articles-container container d-grid">
+
+            <div class="featured-content d-grid">
+
+                <div class="headline-banner">
+                    <h3 class="headline fancy-border">
+                        <span class="place-items-center">Breaking news</span>
+                    </h3>
+                    <span class="headline-description">Netflix Is Cracking Down On Password Sharing With New Test</span>
+                </div>
+
+                <a href="./technology/dataScience.html" class="article featured-article featured-article-1">
+                    <img src="./technology/data science wall (2).jpg" alt="" class="article-image">
+                    <span class="article-category">Technology</span>
+
+                    <div class="article-data-container">
+
+                        <div class="article-data">
+                            <span>5 Dec 2021</span>
+                            <span class="article-data-spacer"></span>
+                            <span>8 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title">All you need to know about Data Science</h3>
+
+                    </div>
+                </a>
+
+                <a href="./technology/AIMLProjects.html" class="article featured-article featured-article-2">
+                    <img src="./../img/BlogImg/project ideas.jpg" alt="project ideas" class="article-image">
+                    <span class="article-category">Innovation</span>
+
+                    <div class="article-data-container">
+
+                        <div class="article-data">
+                            <span>15 Aug 2022</span>
+                            <span class="article-data-spacer"></span>
+                            <span>8 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title"> 5 AI/ML Project Ideas</h3>
+
+                    </div>
+                </a>
+
+                <a href="./technology/programmingLanguages.html" class="article featured-article featured-article-3">
+                    <img src="./technology/programming.jpeg" alt="learn programming best programming language" class="article-image">
+                    <span class="article-category">Technology</span>
+
+                    <div class="article-data-container">
+
+                        <div class="article-data">
+                            <span>6 Feb 20222</span>
+                            <span class="article-data-spacer"></span>
+                            <span>8 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title">Best Programming Languages to learn in 2022</h3>  
+
+                    </div>
+                </a>
+
+            </div>
+            
+            <div class="sidebar d-grid">
+
+                <h3 class="title featured-content-title">Trending Blogs</h3>
+
+                <a href="./technology/Gravitational-time.html" class="trending-news-box">
+                    <div class="trending-news-img-box">
+                        <span class="trending-number place-items-center">01</span>
+                        <img src="./technology/Interstellar.jpg" alt="interstellar nolan" class="article-image">
+                    </div>
+
+                    <div class="trending-news-data">
+
+                        <div class="article-data">
+                            <span>20 Jan 2022</span>
+                            <span class="article-data-spacer"></span>
+                            <span>8 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title trending-title-adjust">Gravitational Time Dilation and Interstellar</h3>
+
+                    </div>
+                </a>
+
+                <a href="./technology/elearning.html" class="trending-news-box">
+                    <div class="trending-news-img-box">
+                        <span class="trending-number place-items-center">02</span>
+                        <img src="./technology/elearing.jpg" alt="self learning e learning zoom online" class="article-image">
+                    </div>
+
+                    <div class="trending-news-data">
+
+                        <div class="article-data">
+                            <span>23 Dec 2021</span>
+                            <span class="article-data-spacer"></span>
+                            <span>3 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title trending-title-adjust">Transition from traditional education to self-learning </h3>
+
+                    </div>
+                </a>
+
+                <a href="./technology/programmingLanguages.html" class="trending-news-box">
+                    <div class="trending-news-img-box">
+                        <span class="trending-number place-items-center">03</span>
+                        <img src="./technology/programming.jpeg" alt="" class="article-image">
+                    </div>
+
+                    <div class="trending-news-data">
+
+                        <div class="article-data">
+                            <span>6 Feb 2022</span>
+                            <span class="article-data-spacer"></span>
+                            <span>8 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title trending-title-adjust">Best Programming language to learn in 2021</h3>
+
+                    </div>
+                </a>
+
+                <a href="./technology/Future-trends-in-robotics.html" class="trending-news-box">
+                    <div class="trending-news-img-box">
+                        <span class="trending-number place-items-center">04</span>
+                        <img src="https://learnenglishteens.britishcouncil.org/sites/teens/files/field/image/rs4492_177531624-hig.jpg" alt="robotics arduino machine leaning artificial intelligence" class="article-image">
+                    </div>
+
+                    <div class="trending-news-data">
+
+                        <div class="article-data">
+                            <span>13 Jan 2022</span>
+                            <span class="article-data-spacer"></span>
+                            <span>3 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title trending-title-adjust">Robotic trends in 2030</h3>
+
+                    </div>
+                </a>
+
+                <a href="./technology/grow-your-home-Business.html" class="trending-news-box">
+                    <div class="trending-news-img-box">
+                        <span class="trending-number place-items-center">05</span>
+                        <img src="https://media.smallbiztrends.com/2017/02/shutterstock_420986872.jpg" alt="self employed digital marketing influencer marketing" class="article-image">
+                    </div>
+
+                    <div class="trending-news-data">
+
+                        <div class="article-data">
+                            <span>10 Feb 2022</span>
+                            <span class="article-data-spacer"></span>
+                            <span>3 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title trending-title-adjust">Grow your home business with Social Videos</h3>
+
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Quick read -->
+    <section class="quick-read section">
+
+        <div class="container">
+
+            <h2 class="title section-title" data-name="Quick read">Quick read</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <a href="./technology/digital-transformation-stratergy.html" class="article swiper-slide">
+                        <img src="./technology/digital-transformation-2.jpg" alt="digital transformation strategy micro analysis macro analysis" class="article-image">
+
+                        <div class="article-data-container">
+                            <div class="article-data">
+                                <span>6 Jan 2022</span>
+                                <span class="article-data-spacer"></span>
+                                <span>5 Min read</span>
+                            </div>
+                            <h3 class="title article-title">Digital Transformation strategy</h3>
+                        </div>
+                    </a>
+                    <!-- Slides -->
+                    <a href="./technology/sea-steading-pods.html" class="article swiper-slide">
+                        <img src="./technology/Ocean-Builder-SeaPod-with-Flag-Panama-e16056291905301.jpg" alt="digital transformation strategy micro analysis macro analysis" class="article-image">
+
+                        <div class="article-data-container">
+                            <div class="article-data">
+                                <span>30 Dec 2021</span>
+                                <span class="article-data-spacer"></span>
+                                <span>8 Min read</span>
+                            </div>
+                            <h3 class="title article-title">Seasteading: Build floating cities on the ocean.</h3>
+                        </div>
+                    </a>
+                 
+                    
+                    <!-- Slides -->
+                    <a href="./technology/Future-trends-in-robotics.html" class="article swiper-slide">
+                        <img src="https://learnenglishteens.britishcouncil.org/sites/teens/files/field/image/rs4492_177531624-hig.jpg" alt="" class="article-image">
+
+                        <div class="article-data-container">
+                            <div class="article-data">
+                                <span>13 Jan 2022</span>
+                                <span class="article-data-spacer"></span>
+                                <span>3 Min read</span>
+                            </div>
+                            <h3 class="title article-title">Future Trends in Robotics</h3>
+                        </div>
+                    </a>
+                    <!-- Slides -->
+                    <a href="./technology/Gravitational-time.html" class="article swiper-slide">
+                        <img src="./technology/Interstellar.jpg" alt="interstellar nolan" class="article-image">
+
+                        <div class="article-data-container">
+                            <div class="article-data">
+                                <span>20 Jan 2022</span>
+                                <span class="article-data-spacer"></span>
+                                <span>8 Min read</span>
+                            </div>
+                            <h3 class="title article-title">Physics behind Interstellar
+                                Movie</h3>
+                        </div>
+                    </a>
+                       <!-- slides -->
+                       <a href="./technology/elearning.html" class="article swiper-slide">
+                        <img src="./technology/elearing.jpg" alt="self learning e learning zoom online" class="article-image">
+
+                        <div class="article-data-container">
+                            <div class="article-data">
+                                <span>23 Dec 2022</span>
+                                <span class="article-data-spacer"></span>
+                                <span>4 Min read</span>
+                            </div>
+                            <h3 class="title article-title">Transition from Traditional Education to Self- Learning.</h3>
+                        </div>
+                    </a>
+
+                    <!-- Slides -->
+                    <a href="./technology/internet-of-Medical-things.html" class="article swiper-slide">
+                        <img src="./technology/imot.jpg" alt="internet of things medical things wearables smart" class="article-image">
+
+                        <div class="article-data-container">
+                            <div class="article-data">
+                                <span>3 Feb 2022</span>
+                                <span class="article-data-spacer"></span>
+                                <span>5 Min read</span>
+                            </div>
+                            <h3 class="title article-title">Internet of Medical Things</h3>
+                        </div>
+                    </a>
+                    <!-- Slides -->
+                    <a href="./technology/grow-your-home-Business.html" class="article swiper-slide">
+                        <img src="https://media.smallbiztrends.com/2017/02/shutterstock_420986872.jpg" alt="self employed digital marketing influencer marketing" class="article-image">
+
+                        <div class="article-data-container">
+                            <div class="article-data">
+                                <span>10 Feb 2022</span>
+                                <span class="article-data-spacer"></span>
+                                <span>3 Min read</span>
+                            </div>
+                            <h3 class="title article-title">Grow your home business with Social Videos</h3>
+                        </div>
+                    </a>
+                    <!-- Slides -->
+                    <!-- <a href="#" class="article swiper-slide">
+                        <img src="./assets/images/quick_read/quick_read_6.jpg" alt="" class="article-image">
+
+                        <div class="article-data-container">
+                            <div class="article-data">
+                                <span>23 Dec 2021</span>
+                                <span class="article-data-spacer"></span>
+                                <span>3 Min read</span>
+                            </div>
+                            <h3 class="title article-title">Sample article title</h3>
+                        </div> -->
+                    </a>
+                </div>
+                <!-- Navigation buttons -->
+                <div class="swiper-button-prev swiper-controls"></div>
+                <div class="swiper-button-next swiper-controls"></div>
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Older posts -->
+    <section class="older-posts section">
+
+        <div class="container">
+
+            <h2 class="title section-title" data-name="Older posts">Older posts</h2>
+
+            <div class="older-posts-grid-wrapper d-grid">
+
+                <a href="./technology/grow-your-home-Business.html" class="article d-grid">
+                    <div class="older-posts-article-image-wrapper">
+                        <img src="https://media.smallbiztrends.com/2017/02/shutterstock_420986872.jpg" alt="self employed digital marketing influencer marketing" class="article-image">
+                    </div>
+
+                    <div class="article-data-container">
+
+                        <div class="article-data">
+                            <span>10 Feb 2022</span>
+                            <span class="article-data-spacer"></span>
+                            <span>3 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title">Grow your home business with Social Videos</h3>
+                        <p class="article-description"> The most important thing with online businesses is that you don't
+                            need a physical workspace to sell your product...</p>
+
+                    </div>
+                </a>
+
+                <a href="./technology/Future-trends-in-robotics.html" class="article d-grid">
+                    <div class="older-posts-article-image-wrapper">
+                        <img src="https://learnenglishteens.britishcouncil.org/sites/teens/files/field/image/rs4492_177531624-hig.jpg" alt="robotics arduino machine leaning artificial intelligence" class="article-image">
+                    </div>
+
+                    <div class="article-data-container">
+
+                        <div class="article-data">
+                            <span>13 Jan 2022</span>
+                            <span class="article-data-spacer"></span>
+                            <span>3 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title">Robotic trends in 2030e</h3>
+                        <p class="article-description">Robotics has come a long way from Science-Fictions to Reality in the
+                            21st century...</p>
+
+                    </div>
+                </a>
+
+                <a href="./technology/programmingLanguages.html" class="article d-grid">
+                    <div class="older-posts-article-image-wrapper">
+                        <img src="./technology/programming.jpeg" alt="" class="article-image">
+                    </div>
+
+                    <div class="article-data-container">
+
+                        <div class="article-data">
+                            <span>6 Feb 2021</span>
+                            <span class="article-data-spacer"></span>
+                            <span>8 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title">Best Programming language to learn in 2021</h3>
+                        <p class="article-description">if you are new to the IT industry or willing to join in
+                            sooner, finding a perfect programming language to start learning...</p>
+
+                    </div>
+                </a>
+
+                <a href="./technology/elearning.html" class="article d-grid">
+                    <div class="older-posts-article-image-wrapper">
+                        <img src="./technology/elearing.jpg" alt="self learning e learning zoom online" class="article-image">
+                    </div>
+
+                    <div class="article-data-container">
+
+                        <div class="article-data">
+                            <span>23 Dec 2021</span>
+                            <span class="article-data-spacer"></span>
+                            <span>3 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title">Transition from traditional education to self-learning</h3>
+                        <p class="article-description"> Before covid-19 patient became the hottest topic in the city, life
+                            of a school child was pretty normal. I was in my final year of high
+                            school when Covid was striking Sri Lanka...</p>
+
+                    </div>
+                </a>
+
+                <a href="./technology/Gravitational-time.html" class="article d-grid">
+                    <div class="older-posts-article-image-wrapper">
+                        <img src="./technology/Interstellar.jpg" alt="interstellar nolan" class="article-image">
+                    </div>
+
+                    <div class="article-data-container">
+
+                        <div class="article-data">
+                            <span>20 Jan 2022</span>
+                            <span class="article-data-spacer"></span>
+                            <span>8 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title">Gravitational Time Dilation and Interstellar</h3>
+                        <p class="article-description">Christopher Nolan has successfully visualized this concept in two
+                            significant situations in the movie. When Cooper and his crew landed
+                            in the spaceship on the Millers' planet...</p>
+
+                    </div>
+                </a>
+
+                <a href="./technology/dataScience.html" class="article d-grid">
+                    <div class="older-posts-article-image-wrapper">
+                        <img src="./technology/data science wall (2).jpg" alt="data science" class="article-image">
+                    </div>
+
+                    <div class="article-data-container">
+
+                        <div class="article-data">
+                            <span>5 Dec 2021</span>
+                            <span class="article-data-spacer"></span>
+                            <span>8 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title">All you need to know about Data Science</h3>
+                        <p class="article-description">We are here at
+                            21st century, in each 10 minutes we collect data more than the data
+                            collected from prehistoric time to year 2003 which would eventually
+                            be the world's largest virtual reservoir...</p>
+
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="see-more-container">
+                <a href="#" class="btn see-more-btn place-items-center">See more <i class="ri-arrow-right-s-line"></i></i></a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Popular tags -->
+    <section class="popular-tags section">
+
+        <div class="container">
+
+            <h2 class="title section-title" data-name="Popular tags">Popular tags</h2>
+
+            <div class="popular-tags-container d-grid">
+
+                <a href="#" class="article">
+                    <span class="tag-name">#Technology</span>
+                    <img src="./assets/images/tags/technology.jpg" alt="" class="article-image">
+                </a>
+
+                <a href="#" class="article">
+                    <span class="tag-name">#E-Learning</span>
+                    <img src="./assets/images/tags/eLearning.jpg" alt="" class="article-image">
+                </a>
+
+                <a href="#" class="article">
+                    <span class="tag-name">#Innovations</span>
+                    <img src="./assets/images/tags/innovation.jpg" alt="" class="article-image">
+                </a>
+
+                <a href="#" class="article">
+                    <span class="tag-name">#Business</span>
+                    <img src="./assets/images/tags/business-3224643_1920.jpg" alt="" class="article-image">
+                </a>
+
+                <a href="#" class="article">
+                    <span class="tag-name">#Programming</span>
+                    <img src="./assets/images/tags/programming.jpg" alt="" class="article-image">
+                </a>
+
+                <a href="#" class="article">
+                    <span class="tag-name">#Sci-Fi</span>
+                    <img src="./assets/images/tags/art-art-fantastika-sci-fi.jpg" alt="" class="article-image">
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Newsletter
+    <section class="newsletter section">
+
+        <div class="container">
+
+            <h2 class="title section-title" data-name="Newsletter">Newsletter</h2>
+
+            <div class="form-container-inner">
+                <h6 class="title newsletter-title">Subscribe to NewsFlash</h6>
+                <p class="newsletter-description">Lorem ipsum dolor sit amet consectetur adipisicing quaerat dignissimos.</p>
+
+                <form action="" class="form">
+                    <input class="form-input" type="text" placeholder="Enter your email address">
+                    <button class="btn form-btn" type="submit">
+                        <i class="ri-mail-send-line"></i>
+                    </button>
+                </form>
+
+            </div>
+
+        </div>
+
+    </section> -->
+
+    <!-- Footer -->
+    <!-- <footer class="footer section">
+
+        <div class="footer-container container d-grid">
+            
+            <div class="company-data" style="margin-left: 5%;">
+                <a href="./index.html">
+                    <h1 class="logo" style="color:#ffd500; font-family: 'Poppins', sans-serif; font-weight: 600;"> <span style="color:#2465ff">STEM</span>  link</h1>
+                </a>
+                <p class="company-description">Stay connected with us through social media for more updates on courses and educational content</p>
+                
+                <ul class="list social-media">
+                    <li class="list-item">
+                        <a href="https://www.instagram.com/stemlink_lk/" class="list-link"><i class="ri-instagram-line"></i></a>
+                    </li>
+                    <li class="list-item">
+                        <a href="https://www.facebook.com/profile.php?id=100075696426884" class="list-link"><i class="ri-facebook-circle-line"></i></a>
+                    </li>
+                    <li class="list-item">
+                        
+                        <a href="https://www.linkedin.com/company/stem-link" class="list-link"><i class="ri-linkedin-box-fill"></i></a>
+                    </li>
+                    
+                </ul>
+
+                <span class="copyright-notice">&copy;2022 STEM link. All rights reserved.</span>
+            </div>
+
+            <div>
+                <h6 class="title footer-title">Categories</h6>
+                
+                <ul class="footer-list list">
+                    <li class="list-item">
+                        <a href="#" class="list-link">E-Learning</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Programming</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Science</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Technology</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Business</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Entrepreneurship</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div>
+                <h6 class="title footer-title">Useful links</h6>
+                
+                <ul class="footer-list list">
+                    <li class="list-item">
+                        <a href="#" class="list-link">Home</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">About</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Explore</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Blog</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Contact Us</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div>
+                <h6 class="title footer-title">Courses</h6>
+                
+                <ul class="footer-list list">
+                    <li class="list-item">
+                        <a href="#" class="list-link"> GCE Ordinary Level</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">GCE Advanced Level</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">GCSE Ordinary Level</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">GCSE Advanced Level</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Skill Hub Courses</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+        
+    </footer> -->
+    <footer class="footer">
+        <ul class="footer__nav">
+          <li class="footer__item">
+            <a class="footer__link" href="../index.html#section--2">Explore</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="../index.html#section--3">Testimonials</a>
+          </li>
+          
+        </ul>
+        <h2 class="nav__logo text-center"><span class="stem">STEM</span> link</h2>
+        <p class="text-center copyright">&copy; Copyright 2021 STEM link
+        </p>
+      </footer>
+
+
+
+    <!-- Swiper.js -->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <!-- Custom script -->
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/search.js"></script>
+    <script src="./assets/js/suggestions.js"></script>
+</body>
+</html>

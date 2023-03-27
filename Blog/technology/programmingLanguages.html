@@ -1,0 +1,464 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs | STEMlink</title>
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/images/favicon_new.png" />
+    <!-- Remix icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- Swiper.js styles -->
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="../assets/css/post.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/main.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body class="light-theme">
+    <!-- Header -->
+    <!-- Header -->
+    <header class="header" id="header">
+      <nav class="navbar container">
+       <a href="index.html" class="nav-logo"
+          ><img src="./../../img/logo-stem.png" alt=""
+        /></a>
+
+        <div class="list list-right">
+          <button class="btn place-items-center" id="theme-toggle-btn">
+            <i class="ri-sun-line sun-icon"></i>
+            <i class="ri-moon-line moon-icon"></i>
+          </button>
+
+          <button class="btn place-items-center" id="search-icon">
+            <i class="ri-search-line"></i>
+          </button>
+
+          <button
+            class="btn place-items-center screen-lg-hidden menu-toggle-icon"
+            id="menu-toggle-icon"
+          >
+            <i class="ri-menu-3-line open-menu-icon"></i>
+            <i class="ri-close-line close-menu-icon"></i>
+          </button>
+        </div>
+
+        <div class="menu" id="menu">
+          <ul class="list">
+            <li class="list-item">
+              <a href="../index.html" class="list-link current">Home</a>
+            </li>
+            <div id="explore-mob-btn" class="dropdown">
+              <button class="dropbtn" onclick="myFunction()">
+                Explore
+                <i class="fa fa-caret-down dropdown-icon"></i>
+              </button>
+              <div class="dropdown-content" id="myDropdown">
+                <a href="../../index.html#section--2">Our Classes</a>
+                <a href="../../index.html#section--3">Testimonials</a>
+              </div>
+            </div>
+            <li class="list-item">
+              <a href="../../about.html" class="list-link">About Us</a>
+            </li>
+            <div id="learning-mob-btn" class="dropdown2">
+              <button
+                class="dropbtn2"
+                style="cursor: pointer"
+                onclick="myFunction2()"
+              >
+                Learning
+                <i class="fa fa-caret-down dropdown-icon"></i>
+              </button>
+              <div class="dropdown-content" id="myDropdown2">
+                <a href="../../about.html">STEM link</a>
+                <a href="../../about.html#maths">Maths</a>
+                <a href="../../about.html#science">Science</a>
+                <a href="../../about.html#it">ICT</a>
+                <a href="../../about.html#english">English</a>
+                <hr />
+                <a href="../../about.html#almaths">C. Maths</a>
+                <a href="../../about.html#alphys">Physics</a>
+                <a href="../../about.html#alchem">Chemistry</a>
+                <a href="../../about.html#CS">Computer Science</a>
+                <hr />
+                <a href="../../about.html#robotics">Robotics</a>
+                <a href="../../about.html#photoshop">Photoshop</a>
+              </div>
+            </div>
+            <li class="list-item">
+              <a href="../index.html" class="list-link">Blogs</a>
+            </li>
+            <li class="list_item">
+              <a class="list-link list-link--btn" href="../../contact.html"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Search -->
+    <div class="search-form-container container" id="search-form-container">
+      <div class="form-container-inner">
+        <form action="" class="form">
+          <input
+            class="form-input"
+            type="text"
+            placeholder="What are you looking for?"
+          />
+          <button class="btn form-btn" type="submit">
+            <i class="ri-search-line"></i>
+          </button>
+        </form>
+        <span class="form-note">Or press ESC to close.</span>
+      </div>
+
+      <button class="btn form-close-btn place-items-center" id="form-close-btn">
+        <i class="ri-close-line"></i>
+      </button>
+    </div>
+
+    <section class="blog-post section-header-offset">
+      <div class="blog-post-container container">
+        <div class="blog-post-data">
+          <h3 class="title blog-post-title">
+            Best Programming language to learn in 2021
+          </h3>
+          <div class="article-data">
+            <span>6 Feb 2022</span>
+            <span class="article-data-spacer"></span>
+            <span>8 Min read</span>
+          </div>
+          <img src="programming.jpeg" alt="learn programming best programming language new trending computer science" />
+        </div>
+
+        <div class="container">
+          <p>
+            Well, if you are new to the IT industry or willing to join in
+            sooner, finding a perfect programming language to start learning
+            would have been a pressing question you are having. Sorry to break
+            this sooner, but honestly, how many programming languages you know
+            or learning the most trending programming language is not the
+            primary requirement to be an excellent software engineer. But being
+            well familiar with at least one programming language and having a
+            solid base on modules like data structures and algorithms would
+            matter a lot. But here's the thing, sometimes the first programming
+            language you are starting to learn would sometimes influence you to
+            be inclined towards a specific field. A person who starts coding
+            with Javascript would lean towards web development. At the same
+            time, another programmer who enters the industry through learning
+            swift would have a higher tendency to work on developing IOS apps.
+          </p>
+          <h3>A brief intro</h3>
+          <p>
+            A Programming language is simply a vocabulary with grammatical rules
+            to instruct a computer or machine to perform a specif task. A
+            programming language has a unique word set called keywords to
+            understand and syntaxes to organize its structure. Programming
+            languages could be broadly categorized into two levels as High-Level
+            programming languages and Low-Level programming languages. Low-Level
+            programming languages such as machine code are more easily
+            understood by computers and are not human-friendly. In contrast,
+            High-Level programming languages are more readable for humans but
+            complex, which requires assembly languages to act as the mediator to
+            convert high-level code to machine languages. The languages above
+            high-level, such as python, which is written using the high-level
+            language C++, could be considered a fourth-generation language.
+          </p>
+          <h3>Languages that are worth for learning in the future</h3>
+          <p>
+            PYPL index is a great indicator for figuring out the current
+            industry trends for programming languages. I would suggest not
+            deciding purely by looking at that graph, but it's essential to
+            determine what kind of pathway you are willing to take after
+            learning it or what inspires you the most to learn to program. This
+            blog will point out key takeaways of several mostly used programming
+            languages in the past few years.
+          </p>
+          <h3>Python</h3>
+          <img
+            src="https://ed-matrix.com/pluginfile.php/35268/course/summary/python-programming-for-beginners-2019.jpg"
+            alt="python stackoverflow survey"
+          />
+          <p>
+            Data Science and Machine Learning have shown an exponential trend of
+            growth in the past couple of years, and python is considered to be a
+            language that has great tools and libraries specializing in Data
+            Science. Data science applications such as auto-driving cars,
+            automated robots, and predictive analysis would result in massive
+            innovations in the future. Since python is a beginner-friendly
+            language and closer to human language, it would be an excellent
+            starter for programming beginners. The world's biggest platforms
+            like Google, YouTube, Instagram, Dropbox, and Quora were built using
+            python. Other than data science, python could be used in a wide
+            range of fields like backend development, web scraping, game
+            development, and much more According to PYPL ranking, python holds
+            number 1 in the chart.
+          </p>
+          <h3>JavaScript</h3>
+          <img src="javascript.png" alt="javascript front end development client side development stack overflow developer survey" />
+          <p>
+            JavaScript is a more versatile language heavily used in web
+            development for both the client-side and server-side. JavaScript is
+            a beginner-friendly programming language that only needs a text
+            editor and a browser to run the code. JavaScript contained popular
+            run times and frameworks such as Vue.js, Node.js, Angular.js, and
+            React.js. Libraries like React.js would allow the users to build
+            mobile native applications, which would show a significant trend in
+            mobile app development shifting towards hybrid development
+            technologies. Further, with the latest integrations like the
+            Tensorflow JS library, JavaScript enables the opportunity to code
+            machine learning algorithms. JavaScript contains tons of other
+            libraries useful for game development and digital design creation.
+            JavaScript has a large development community worldwide, and
+            javascript developers are considered highly paid developers in this
+            decade. Learning JavaScript would give you a greater edge in joining
+            the digital development world.
+          </p>
+          <h3>Swift or Kotlin</h3>
+          <img
+            src="https://miro.medium.com/max/1838/1*qFJypD7CfSDRqQUXm7q99w.png"
+            alt="swift kotlin ios development mobile android development"
+          />
+          <p>
+            Having a recurring income after several really passionate projects
+            would be every developer's dream. Creating a useful tool or an
+            application by identifying community needs and making it visible on
+            Google Play Store and Apps Store would be a better solution for
+            achieving this. Learning Swift would enable you the opportunity to
+            create IOS applications, and Kotlin would serve its purpose for
+            Android devices. Throughout the past couple of years, Swift and
+            Kotlin appeared to be stable programming languages with a
+            fast-growing community around them. These languages are
+            beginner-friendly and can be considered more simplified versions of
+            earlier app development languages like Java and Objective-C.
+          </p>
+          <h3>Go</h3>
+          <img
+            src="https://matob.web.id/news/wp-content/uploads/sites/4/2020/11/go.png"
+            alt="go lang"
+          />
+          <p>
+            Go AKA Golang was first developed by the Google dev team in 2007 to
+            reduce the complexity of their codebase infrastructure. In 2012 Go
+            was released to the public as an open-source project, and over the
+            past decade, this language was heavily adapted by many tech
+            corporations. Go would resolve many scalability problems in
+            languages like Java. As you know, almost any programming language
+            can be used for cloud application development. Out of them, several
+            languages would stand out over the others. Go is considered one of
+            them due to the simplicity of the language and its ability to write
+            high-performance programmes. Go support multi-threading and has high
+            efficiency in concurrent programming environments. Go was used to
+            code highly used infrastructure tools such as Kubernetes and Docker,
+            proving that Golang is a leader in cloud-based programmes.
+          </p>
+          <h3>Java</h3>
+          <img
+            src="https://www.cybersuccess.biz/wp-content/uploads/2021/03/interesting-facts-about-java-programming-language.jpg"
+            alt="java object oriented programming"
+          />
+          <p>
+            Well, here comes the debate of this decade. Undoubtedly, Java has
+            become the all-time competitive grandfather of most object-oriented
+            programming languages. Java has become one of the most used
+            programming languages in many cooperate world infrastructures. Java
+            can be used in a broad range of fields such as mobile app
+            development, web application development, game development and much
+            more. Over the past couple of years, Java has shown a slight decline
+            in user interest and usage due to the release of cutting edge
+            programming languages such as Go, Swift and Kotlin. Learning Java
+            would be slightly complicated compared to the programming languages
+            mentioned above. But still, there's an enormous community worldwide
+            for Java, and many job opportunities are there for Java developers.
+            So, spending some time learning Java would be still worth it.
+          </p>
+
+          <blockquote class="quote">
+            <p>
+              <span><i class="ri-double-quotes-l"></i></span>
+              STEM link has launched a series of tech courses such as Python
+              Programming, Frontend Development, Robotics and Photoshop courses
+              for you to enhance your skill library.
+              <span><i class="ri-double-quotes-r"></i></span>
+            </p>
+          </blockquote>
+          <!-- 
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
+            eius possimus hic eligendi distinctio rerum incidunt, esse quasi eum
+            molestiae ducimus ipsam quae, aliquid ullam placeat dolorum nulla
+            vero. Quam? Lorem ipsum dolor sit amet consectetur, adipisicing
+            elit. Vero quod necessitatibus, aspernatur pariatur asperiores earum
+            quas adipisci veritatis quidem facilis! Nihil veniam quaerat nulla
+            possimus, asperiores vero voluptatum placeat. Eveniet!
+          </p> -->
+
+          <div class="author d-grid">
+            <div class="author-image-box">
+              <img src="dilshara.png" alt="" class="article-image" />
+            </div>
+            <div class="author-about">
+              <h3 class="author-name">Dilshara Hasanka</h3>
+              <p>
+                Founder of STEM link, Mathematics consultant for UK, Computer
+                Science tutor for STEM link, Content Specialist for B Your
+                Brand, Freelance Journalist & Software Engineering Undergraduate
+              </p>
+              <ul class="list social-media">
+                <li class="list-item">
+                  <a href="#" class="list-link"
+                    ><i class="ri-instagram-line"></i
+                  ></a>
+                </li>
+                <li class="list-item">
+                  <a href="#" class="list-link"
+                    ><i class="ri-facebook-circle-line"></i
+                  ></a>
+                </li>
+                <li class="list-item">
+                  <a href="#" class="list-link"
+                    ><i class="ri-twitter-line"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- <footer class="footer section">
+      <div class="footer-container container d-grid">
+        <div class="company-data">
+          <a href="./index.html">
+            <h2 class="logo">NewsFlash</h2>
+          </a>
+          <p class="company-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
+            iure. Harum, animi dolores, nam, ad magni expedita.
+          </p>
+          <ul class="list social-media">
+            <li class="list-item">
+              <a href="#" class="list-link"
+                ><i class="ri-instagram-line"></i
+              ></a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link"
+                ><i class="ri-facebook-circle-line"></i
+              ></a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link"><i class="ri-twitter-line"></i></a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link"
+                ><i class="ri-pinterest-line"></i
+              ></a>
+            </li>
+          </ul>
+          <span class="copyright-notice"
+            >&copy;2021 NewsFlash. All rights reserved.</span
+          >
+        </div>
+
+        <div>
+          <h6 class="title footer-title">Categories</h6>
+          <ul class="footer-list list">
+            <li class="list-item">
+              <a href="#" class="list-link">Travel</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Food</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Technology</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Health</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Nature</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Fitness</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h6 class="title footer-title">Useful links</h6>
+          <ul class="footer-list list">
+            <li class="list-item">
+              <a href="#" class="list-link">Home</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Elements</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Tags</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Authors</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Membership</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h6 class="title footer-title">Company</h6>
+          <ul class="footer-list list">
+            <li class="list-item">
+              <a href="#" class="list-link">Contact us</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">F.A.Q</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Careers</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Authors</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Memberships</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer> -->
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="../../index.html#section--2">Explore</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="../../index.html#section--3">Testimonials</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">FAQ</a>
+        </li>
+      </ul>
+      <h2 class="nav__logo text-center"><span class="stem">STEM</span> link</h2>
+      <p class="text-center copyright">&copy; Copyright 2021 STEM link
+      </p>
+    </footer>
+
+    <!-- Swiper.js -->
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+    <!-- Custom script -->
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

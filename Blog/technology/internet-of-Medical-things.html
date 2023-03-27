@@ -1,0 +1,438 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs | STEMlink</title>
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/images/favicon_new.png" />
+    <!-- Remix icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- Swiper.js styles -->
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="../assets/css/post.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/main.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body class="light-theme">
+    <!-- Header -->
+    <!-- Header -->
+    <header class="header" id="header">
+      <nav class="navbar container">
+       <a href="index.html" class="nav-logo"
+          ><img src="./../../img/logo-stem.png" alt=""
+        /></a>
+
+        <div class="list list-right">
+          <button class="btn place-items-center" id="theme-toggle-btn">
+            <i class="ri-sun-line sun-icon"></i>
+            <i class="ri-moon-line moon-icon"></i>
+          </button>
+
+          <button class="btn place-items-center" id="search-icon">
+            <i class="ri-search-line"></i>
+          </button>
+
+          <button
+            class="btn place-items-center screen-lg-hidden menu-toggle-icon"
+            id="menu-toggle-icon"
+          >
+            <i class="ri-menu-3-line open-menu-icon"></i>
+            <i class="ri-close-line close-menu-icon"></i>
+          </button>
+        </div>
+
+        <div class="menu" id="menu">
+          <ul class="list">
+            <li class="list-item">
+              <a href="../index.html" class="list-link current">Home</a>
+            </li>
+            <div id="explore-mob-btn" class="dropdown">
+              <button class="dropbtn" onclick="myFunction()">
+                Explore
+                <i class="fa fa-caret-down dropdown-icon"></i>
+              </button>
+              <div class="dropdown-content" id="myDropdown">
+                <a href="../../index.html#section--2">Our Classes</a>
+                <a href="../../index.html#section--3">Testimonials</a>
+              </div>
+            </div>
+            <li class="list-item">
+              <a href="../../about.html" class="list-link">About Us</a>
+            </li>
+            <div id="learning-mob-btn" class="dropdown2">
+              <button
+                class="dropbtn2"
+                style="cursor: pointer"
+                onclick="myFunction2()"
+              >
+                Learning
+                <i class="fa fa-caret-down dropdown-icon"></i>
+              </button>
+              <div class="dropdown-content" id="myDropdown2">
+                <a href="../../about.html">STEM link</a>
+                <a href="../../about.html#maths">Maths</a>
+                <a href="../../about.html#science">Science</a>
+                <a href="../../about.html#it">ICT</a>
+                <a href="../../about.html#english">English</a>
+                <hr />
+                <a href="../../about.html#almaths">C. Maths</a>
+                <a href="../../about.html#alphys">Physics</a>
+                <a href="../../about.html#alchem">Chemistry</a>
+                <a href="../../about.html#CS">Computer Science</a>
+                <hr />
+                <a href="../../about.html#robotics">Robotics</a>
+                <a href="../../about.html#photoshop">Photoshop</a>
+                <a href="../../about.html#python">Python</a>
+              </div>
+            </div>
+            <li class="list-item">
+              <a href="../index.html" class="list-link">Blogs</a>
+            </li>
+            <li class="list_item">
+              <a class="list-link list-link--btn" href="../../contact.html"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Search -->
+    <div class="search-form-container container" id="search-form-container">
+      <div class="form-container-inner">
+        <form action="" class="form">
+          <input
+            class="form-input"
+            type="text"
+            placeholder="What are you looking for?"
+          />
+          <button class="btn form-btn" type="submit">
+            <i class="ri-search-line"></i>
+          </button>
+        </form>
+        <span class="form-note">Or press ESC to close.</span>
+      </div>
+
+      <button class="btn form-close-btn place-items-center" id="form-close-btn">
+        <i class="ri-close-line"></i>
+      </button>
+    </div>
+
+    <section class="blog-post section-header-offset">
+      <div class="blog-post-container container">
+        <div class="blog-post-data">
+          <h3 class="title blog-post-title">
+            Internet of Medical Things Wearables
+          </h3>
+          <div class="article-data">
+            <span>3 Feb 2022</span>
+            <span class="article-data-spacer"></span>
+            <span>5 Min read</span>
+          </div>
+          <img src="imot.jpg" alt="internet of things medicine electronics biomedical engineering" />
+        </div>
+
+        <div class="container">
+          <p>
+            Have you ever lost your phone and tracked it using Find My App or
+            accessed your phone gallery using the drive. Having machines
+            connected to the internet has brought us numerous advantages.
+            Internet of things is all about connecting machinery, utensils and
+            equipment to the internet, sharing data over cloud storage. IoMT is
+            about internet-connected medical devices, hardware and software
+            infrastructures used for multiple medical purposes. Wearable and
+            remote devices would share the health data it gains over the
+            internet to any location in real-time, beneficial for medical
+            analysis. This gives birth to fields like bioinformatics that deals
+            with an enormous number of data to figure out different patterns.
+          </p>
+          <h3>How does IoMT impact healthcare</h3>
+
+          <img
+            src="https://www.devprojournal.com/wp-content/uploads/2019/02/healthcare-IT-trends-e1551106993336.jpg"
+            alt="healthcare medical electronics biomedical engineering"
+          />
+
+          <p>
+            In-home IoMT allows the patients to share their medical data and
+            reports over the internet for relevant healthcare providers' further
+            advice in real-time. Telehealth is a successful method for a virtual
+            consultation with higher efficiency. This is a distance
+            communication methodology with any medical Institute they prefer
+            worldwide and prevent the hazard of visiting a doctor for mild
+            health concerns. In-hospital IoMT has shown more significant
+            progress and efficiency in the past couple of years. Tele-Surgeries,
+            keeping track of patient movements, and emergency care are the major
+            applications of in-hospital IoMT.
+          </p>
+          <h3>Evolution of healthcare wearables</h3>
+
+          <p>
+            Wearables used in healthcare runs back to the history of the 13th
+            century, wearing spectacles for vision adjustment purposes. In the
+            mid-twenties, Holter monitor, a portable electrocardiogram device is
+            introduced to measure the irregular heartbeat. Followed by that,
+            different wearable devices were created worldwide to serve multiple
+            health check purposes. The advancement of technology has made the
+            medical wearables more advanced and smaller in size, which is
+            convenient enough to fit it to your hand like a watch or wear it as
+            a replacement for your wedding ring.
+          </p>
+          <h3>Fitness Trackers and Smart Watches</h3>
+          <img
+            src="https://www.androidauthority.com/wp-content/uploads/2021/04/xiaomi-mi-band-6-review-display-close-up-scaled.jpg"
+            alt="wearables medical electronic smart watches fitness trackers"
+          />
+          <p>
+            A fitness tracker could be considered an important IoMT device out
+            there in the market. According to a study, it shows 20% of the
+            American population wear a smartwatch or a fit bit to track their
+            fitness levels. These devices are directly connected to the mobile
+            device via the internet and Bluetooth, and data is stored in cloud
+            storage. These fitness data such as oxygen levels, blood pressure
+            levels, heartbeat rate, calories burned, hours of sleep and number
+            of steps would be a great set of data to be analyzed to diagnose
+            different health conditions. Machine learning algorithms integrated
+            into Fitbit apps would give a comprehensive idea of your health
+            progress would alarm you when to exercise. Studies have shown people
+            who uses Fitbit at the age of 40 to 60 has a low tendency of having
+            issues like high blood pressure. In the recent events of Covid-19,
+            we identified that having low oxygen levels as a symptom of
+            Covid-19. <br /><br />
+            Apple smartwatch developers are currently on technologies where
+            Apple watch would track users having irregular heartbeats and send
+            them a notification mentioning the stats. Further, they are working
+            on sensers that can detect erratic pulse, which can be a sign of
+            atrial fibrillation (AFib), increasing the risk of blood clots,
+            strokes, and other related complications.
+          </p>
+          <h3>Motion Tracker Wearables</h3>
+          <img
+            src="https://bsmedia.business-standard.com/_media/bs/img/article/2020-03/05/full/1583347133-5854.jpg"
+            alt="motion trackers wearbales pedometer electronic"
+          />
+          <p>
+            Other than smartwatches and Fitbits, several wearables are created
+            for designated purposes, such as measuring blood sugar levels, skin
+            temperature levels. Further electrocardiogram measurements and
+            electroencephalogram measurements are using smart wearables. Mostly
+            measuring vital signs have been a crucial part of these devices.
+          </p>
+          <h3>Smart Clothing</h3>
+          <img
+            src="https://i.ytimg.com/vi/rH8amzKJWAI/maxresdefault.jpg"
+            alt="smart clothes werables internet of things"
+          />
+          <p>
+            Smart clothing has become a latest invention in this decade, which
+            would give solutions for multiple issues. Smart wearables may be
+            capable of tracking irregular heartbeats, but they cannot perform
+            any action back on the body to regulate it. This is where Smart
+            clothing comes into place. When you wear a LifeVest, it will track
+            your heartbeat. If it detects any irregularity in the heartbeat,
+            LifeVest is capable of giving a shock back on your body to restore
+            it. This would prevent tragic incidents such as Sudden Cardiac
+            Deaths, which happens when the heartbeat is too low to pump the
+            required blood to the body or when the heart stops beating abruptly.
+            <br /><br />
+            Further, smart clothing has been a solution for people with
+            conditions like Parkinson's Tremor. These people. This is a
+            condition where your body parts start shaking while still and mostly
+            happens when sleeping or when the body doesn't perform any motion.
+            Smart clothing can settle this issue by identifying those situations
+            and reducing the shaking amplitude by 85%. <br /><br />
+            Placing sensors and relevant instruments in the suitable locations
+            of cloth and connecting wires through clothing textiles so that the
+            user doesn't feel uncomfortable are crucial when designing these
+            wearables.
+          </p>
+          <p>
+            With technologies like quantum computing and nanotechnology, tons of
+            medical devices would be available in the market for consumers. But
+            using the suitable instruments made by maintaining the standard
+            procedures would be an essential factor to consider when using these
+            equipment in daily life.
+          </p>
+
+          <blockquote class="quote">
+            <p>
+              <span><i class="ri-double-quotes-l"></i></span>
+              In our classes we incorporate real-world examples to make the
+              session more interesting and practical. Learning with examples
+              would help students to make sense out of what they have learnt.
+              This is the reason in our classes we get lots of interesting
+              creative ideas from students' end as well.
+              <span><i class="ri-double-quotes-r"></i></span>
+            </p>
+          </blockquote>
+
+          =
+          <div class="author d-grid">
+            <div class="author-image-box">
+              <img src="dilshara.png" alt="" class="article-image" />
+            </div>
+            <div class="author-about">
+              <h3 class="author-name">Dilshara Hasanka</h3>
+              <p>
+                Founder of STEM link, Mathematics consultant for UK, Computer
+                Science tutor for STEM link, Content Specialist for B Your
+                Brand, Freelance Journalist & Software Engineering Undergraduate
+              </p>
+              <ul class="list social-media">
+                <li class="list-item">
+                  <a href="#" class="list-link"
+                    ><i class="ri-instagram-line"></i
+                  ></a>
+                </li>
+                <li class="list-item">
+                  <a href="#" class="list-link"
+                    ><i class="ri-facebook-circle-line"></i
+                  ></a>
+                </li>
+                <li class="list-item">
+                  <a href="#" class="list-link"
+                    ><i class="ri-twitter-line"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- <footer class="footer section">
+      <div class="footer-container container d-grid">
+        <div class="company-data">
+          <a href="./index.html">
+            <h2 class="logo">NewsFlash</h2>
+          </a>
+          <p class="company-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
+            iure. Harum, animi dolores, nam, ad magni expedita.
+          </p>
+          <ul class="list social-media">
+            <li class="list-item">
+              <a href="#" class="list-link"
+                ><i class="ri-instagram-line"></i
+              ></a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link"
+                ><i class="ri-facebook-circle-line"></i
+              ></a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link"><i class="ri-twitter-line"></i></a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link"
+                ><i class="ri-pinterest-line"></i
+              ></a>
+            </li>
+          </ul>
+          <span class="copyright-notice"
+            >&copy;2021 NewsFlash. All rights reserved.</span
+          >
+        </div>
+
+        <div>
+          <h6 class="title footer-title">Categories</h6>
+          <ul class="footer-list list">
+            <li class="list-item">
+              <a href="#" class="list-link">Travel</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Food</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Technology</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Health</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Nature</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Fitness</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h6 class="title footer-title">Useful links</h6>
+          <ul class="footer-list list">
+            <li class="list-item">
+              <a href="#" class="list-link">Home</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Elements</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Tags</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Authors</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Membership</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h6 class="title footer-title">Company</h6>
+          <ul class="footer-list list">
+            <li class="list-item">
+              <a href="#" class="list-link">Contact us</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">F.A.Q</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Careers</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Authors</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Memberships</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer> -->
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="../../index.html#section--2">Explore</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="../../index.html#section--3">Testimonials</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">FAQ</a>
+        </li>
+      </ul>
+      <h2 class="nav__logo text-center"><span class="stem">STEM</span> link</h2>
+      <p class="text-center copyright">&copy; Copyright 2021 STEM link
+      </p>
+    </footer>
+
+    <!-- Swiper.js -->
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+    <!-- Custom script -->
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
